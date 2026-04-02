@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouhamed Touré | Développeur Web & Communication Digitale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<input type="checkbox" id="theme-switch" class="theme-switch" hidden>
+
+<!-- MODE -->
+<div class="theme-toggle">
+    <label class="switch" for="theme-switch">
+        <span class="slider"></span>
+    </label>
+    <span id="theme-label">Mode clair</span>
+</div>
+
+<div class="site-content">
+
+<!-- NAV -->
+<nav>
+    <h2>Mouhamed</h2>
+    <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <h1>Mouhamed Touré</h1>
+    <p>Développeur Web & Communication Digitale 💼</p>
+    <a href="#contact" class="btn">Travaillons ensemble</a>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>À propos</h2>
+    <img src="moi.jpeg" alt="Mouhamed Touré" class="profile" />
+    <p>
+        Développeur full-stack passionné, je transforme les besoins métiers en solutions numériques efficaces.
+        J'ai déjà travaillé sur des projets de sites vitrines, e-commerce et refonte d'identité visuelle.
+    </p>
+    <ul>
+        <li>📍 Basé à thies, Sénégal</li>
+        <li>🎓 Étudiant en communication digitale</li>
+        <li>💡 Toujours à jour sur les dernières tendances UX/UI</li>
+    </ul>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2>Compétences</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Web</h3>
+            <p>HTML5, CSS3, JavaScript, React, Tailwind, Bootstrap</p>
+        </div>
+
+        <div class="card">
+            <h3>Back-end</h3>
+            <p>Node.js, Express, PHP, MySQL, MongoDB</p>
+        </div>
+
+        <div class="card">
+            <h3>Design</h3>
+            <p>Figma, Adobe XD, Responsive, Accessibilité</p>
+        </div>
+
+        <div class="card">
+            <h3>Marketing</h3>
+            <p>SEO, réseaux sociaux, stratégie de contenu</p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+    <h2>Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Site vitrine</h3>
+            <p>Conception sur mesure, responsive, SEO-friendly.</p>
+        </div>
+
+        <div class="card">
+            <h3>E-commerce</h3>
+            <p>Catalogue, paiement sécurisé, gestion des commandes.</p>
+        </div>
+
+        <div class="card">
+            <h3>Marketing Digital</h3>
+            <p>Stratégie de contenu, social media, acquisition clients.</p>
+        </div>
+        <div class="card">
+            <h3>Maintenance & Support</h3>
+            <p>Mise à jour, sécurité, optimisation de performance.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <p>Quelques réalisations marquantes, conçues pour le web et le marketing digital.</p>
+
+    <div class="cards portfolio-cards">
+        <article class="card">
+            <h3>Site vitrine local</h3>
+            <p>HTML, CSS, responsive mobile/tablette, SEO initial.</p>
+            <p><strong>Statut :</strong> En ligne</p>
+        </article>
+
+        <article class="card">
+            <h3>Mini e-commerce</h3>
+            <p>Catalogue produit JS, panier localStorage, design UX.</p>
+            <p><strong>Statut :</strong> Démo</p>
+        </article>
+
+        <article class="card">
+            <h3>Refonte identité</h3>
+            <p>Prototype Figma, palette couleur, système de composants UI.</p>
+            <p><strong>Statut :</strong> Projet terminé</p>
+        </article>
+
+        <article class="card">
+            <h3>Campagne réseaux sociaux</h3>
+            <p>Stratégie de contenu, calendrier éditorial, visuels animés.</p>
+            <p><strong>Statut :</strong> En cours</p>
+        </article>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Vous avez un projet ? Parlons-en !</p>
+
+    <div class="contact-info">
+        <p>📧 Email : <a href="mailto:mouhamed.toure8@unchk.edu.sn">mouhamed.toure8@unchk.edu.sn</a></p>
+        <p>📱 WhatsApp : <a href="https://wa.me/221763640054" target="_blank">+221 76 36 40 054</a></p>
+    </div>
+
+    <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); alert('Reçu ! Merci, je reviens vers vous rapidement.');">
+        <input type="text" name="name" placeholder="Votre nom" required />
+        <input type="email" name="email" placeholder="Votre email" required />
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+    </form>
+</section>
+
+</div> <!-- .site-content -->
+
+</body>
+</html>
